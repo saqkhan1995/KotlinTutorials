@@ -20,7 +20,8 @@ fun main(args: Array<String>) {
 
     val dracula = VampyreKing("Dracula")
     println(dracula)
-
-    dracula.takeDamage(16)
+    while(dracula.lives>0) {               // While loop
+        dracula.takeDamage(16)
+    }
 }
 
